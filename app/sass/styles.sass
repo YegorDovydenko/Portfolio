@@ -1,0 +1,418 @@
+html, body
+	font-family: Montserrat-Regular
+
+h1, h2, h3, h4, h5, h6
+	font-family: Montserrat-ExtraBold
+	margin: 0
+	padding: 0
+
+a, div
+	font-family: Montserrat-Regular
+
+html
+	width: 100%
+	background: #191919
+
+body
+	width: 1000px
+	background: #fff
+	margin: 0 auto
+
+h1
+	font-size: 40px
+h2
+	font-size: 32px
+h3
+	font-size: 18px
+h4
+	font-size: 16px
+p
+	font-size: 14px
+	font-family: PTMono-Regular
+a
+	text-decoration: none
+
+.firstBlock__grey
+	height: 100vh
+	min-height: 600px
+	text-align: center
+	padding-top: 124px
+	background: #eff1f2
+	img
+		border-radius: 50%
+		margin-bottom: 30px
+	p
+		margin-bottom: 40px
+		opacity: .7
+	a
+		background: #0059d9
+		font-family: Montserrat-ExtraBold
+		font-size: 18px
+		padding: 15px 90px
+		color: white
+		border-radius: 4px
+		&:hover
+			background: #000
+		&:active
+			background: #0059D9
+			opacity: .7
+.firstBlock__white
+	height: 323px
+	padding: 100px 15%
+	h2 
+		margin-bottom: 10px
+	.firstBlock__white--tabs
+		.hide
+			display: none
+		label
+			color: #0059d9
+			border-top: 1px solid #d2d9e2
+			padding: 15px 0
+			display: inline-block
+			line-height: 24px
+			font-family: Montserrat-ExtraBold
+			font-size: 18px
+			width: 100%
+			&:after
+				content: '✕'
+				font-weight: 700
+				transform: rotate(-225deg)
+				float: right
+				display: none
+			&:hover:after
+				display: block
+		.hide:checked + label
+			color: black
+		.hide:checked + label:after
+			transform: rotate(-270deg)
+		div
+			display: none
+			opacity: .7
+			line-height: 20px
+			width: 520px
+		.hide:checked + label + div
+			display: block
+
+.secondBlock
+	overflow: hidden
+	background: #25282a
+	text-align: center
+	h2, h3, p
+		color: white
+	p
+		opacity: .7
+		margin-bottom: 0
+	h2, h3
+		padding-top: 84px
+	h3
+		padding-bottom: 3px
+	a
+		color: #71ABFF
+		font-family: PTMono-Regular
+		line-height: 20px
+		&:hover
+			color: #fff
+		&:active
+			opacity: .7
+			color: #71ABFF
+
+	.secondBlock__first, .secondBlock__second, .secondBlock__third
+		width: 70%
+		margin: 0 auto
+		.wrapper
+			height: 400px
+			margin: 20px auto 0
+			position: relative
+			width: 700px
+			input
+				display: none
+			label
+				cursor: pointer
+				display: inline-block
+				height: 8px
+				margin: 25px 0 0 5px
+				position: relative
+				width: 8px
+				border-radius: 50%
+				background: #71ABFF
+				&:hover
+					background: #fff
+				&:after
+					border: 1px solid #71ABFF
+					content: " "
+					display: block
+					height: 6px
+					position: absolute
+					width: 6px
+					border-radius: 50%
+			.slider
+				height: 377px
+				overflow: hidden
+				position: relative
+				width: 700px
+				box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08), 0 7px 22px 0 rgba(0,0,0,0.12)
+				.slides
+					height: inherit
+					position: absolute
+					width: inherit
+					opacity: 0
+					z-index: 0
+					border-radius: 8px
+					transition: transform ease-in-out .5s, opacity ease-in-out .5s
+					background-repeat: no-repeat
+					background-size: cover
+			.controls
+				left: 100%
+				margin-left: -65px
+				position: absolute
+		p
+			font-family: PTSans-Regular
+			text-align: left
+			margin: 0
+			width: 74%
+
+	.secondBlock__first
+		.wrapper
+			label:hover, #slide1:checked ~ .controls, 
+				label:nth-of-type(1)
+					background: none
+			label:hover, #slide2:checked ~ .controls
+				label:nth-of-type(2)
+					background: none
+			label:hover, #slide3:checked ~ .controls
+				label:nth-of-type(3)
+					background: none
+			label:hover, #slide4:checked ~ .controls
+				label:nth-of-type(4)
+					background: none
+			#slide1:checked ~ .slider > .slide1, #slide2:checked ~ .slider > .slide2, #slide3:checked ~ .slider > .slide3, #slide4:checked ~ .slider > .slide4
+				opacity: 1
+				z-index: 1
+			.slider
+				.slide1
+					background-image: url('../img/first-project/first-project-1.jpg')
+				.slide2
+					background-image: url('../img/first-project/first-project-2.jpg')
+				.slide3
+					background-image: url('../img/first-project/first-project-3.jpg')
+				.slide4
+					background-image: url('../img/first-project/first-project-4.jpg')
+
+	.secondBlock__second
+		.wrapper
+			label:hover, #slide5:checked ~ .controls, 
+				label:nth-of-type(1)
+					background: none
+			label:hover, #slide6:checked ~ .controls
+				label:nth-of-type(2)
+					background: none
+			label:hover, #slide7:checked ~ .controls
+				label:nth-of-type(3)
+					background: none
+			label:hover, #slide8:checked ~ .controls
+				label:nth-of-type(4)
+					background: none
+			#slide5:checked ~ .slider > .slide5, #slide6:checked ~ .slider > .slide6, #slide7:checked ~ .slider > .slide7, #slide8:checked ~ .slider > .slide8
+				opacity: 1
+				z-index: 1
+			.slider
+				.slide5
+					background-image: url('../img/second-project/second-project-1.jpg')
+				.slide6
+					background-image: url('../img/second-project/second-project-2.jpg')
+				.slide7
+					background-image: url('../img/second-project/second-project-3.jpg')
+				.slide8
+					background-image: url('../img/second-project/second-project-4.jpg')
+
+	.secondBlock__third
+		margin-bottom: 100px
+		.wrapper
+			label:hover, #slide9:checked ~ .controls, 
+				label:nth-of-type(1)
+					background: none
+			label:hover, #slide10:checked ~ .controls
+				label:nth-of-type(2)
+					background: none
+			label:hover, #slide11:checked ~ .controls
+				label:nth-of-type(3)
+					background: none
+			label:hover, #slide12:checked ~ .controls
+				label:nth-of-type(4)
+					background: none
+			#slide9:checked ~ .slider > .slide9, #slide10:checked ~ .slider > .slide10, #slide11:checked ~ .slider > .slide11, #slide12:checked ~ .slider > .slide12
+				opacity: 1
+				z-index: 1
+			.slider
+				.slide9
+					background-image: url('../img/third-project/third-project-1.jpg')
+				.slide10
+					background-image: url('../img/third-project/third-project-2.jpg')
+				.slide11
+					background-image: url('../img/third-project/third-project-3.jpg')
+				.slide12
+					background-image: url('../img/third-project/third-project-4.jpg')
+
+.thirdBlock
+	background: #eff1f2
+	padding: 100px 15%
+	text-align: center
+	.thirdBlock__social
+		margin-top: 16px
+		a
+			margin-right: 16px
+			opacity: .85
+			&:hover
+				opacity: 1
+			&:active
+				opacity: .7
+			&:nth-of-type(3)
+				margin-right: 0px
+		img
+			width: 50px
+	p
+		line-height: 20px
+	form
+		text-align: justify
+		margin-top: 40px
+		input
+			box-shadow: 0 0 0 0.5px rgba(0,0,0,.08)
+			padding-left: 10px
+			&::placeholder
+				color: #000
+				font-size: 16px
+				line-height: 20px
+				font-family: PTSans-Regular
+				opacity: 0.3
+		#input-name, #input-email
+			width: 47%
+			height: 32px
+			border: 1px solid rgba(31,64,111,0.20)
+			border-radius: 4px
+		#input-message
+			margin-top: 20px
+			width: 99.7%
+			height: 132px
+			border: 1px solid rgba(31,64,111,0.20)
+			border-radius: 4px
+			padding: 0
+			&::placeholder
+				padding-left: 10px
+		.file-download
+			background: none
+			border: 1px solid rgba(31,64,111,0.20)
+			border-radius: 4px
+			box-shadow: 0 0 0 0.5px rgba(0,0,0,.08)
+			width: 100%
+			margin: 20px 0
+			color: #0059D9
+			&:hover
+				color: #000
+			input
+				width: 100%
+				opacity: 0
+				height: 32px
+			h4
+				font-family: PTSans-Regular
+				text-align: center
+				line-height: 20px
+				margin-top: -27px
+				margin-bottom: 5px
+				font-weight: 400
+		button
+			background: #0059d9
+			cursor: pointer
+			font-family: Montserrat-ExtraBold
+			font-size: 18px
+			padding: 15px 90px
+			color: #fff
+			border-radius: 4px
+			border: none
+			width: 100%
+			&:hover
+				background: #000
+			&:focus
+				outline: 0px
+			&:active
+				opacity: .7
+				background: #0059d9
+				border-radius: 4px
+
+@media screen and (max-width: 601px) 
+	body
+		width: 100%
+	h1
+		font-size: 32px
+	.firstBlock__grey
+		img
+			width: 250px
+		p
+			width: 280px
+			margin-left: auto
+			margin-right: auto
+	.firstBlock__white
+		padding: 52px 7%
+		height: 347px
+		.firstBlock__white--tabs
+			div
+				width: 100%
+	.secondBlock
+		h2, h3
+			padding-top: 70px
+		p
+			width: 80%
+			margin-left: auto
+			margin-right: auto
+		.secondBlock__first, .secondBlock__second, .secondBlock__third
+			width: 86%
+			.wrapper
+				width: 100%
+				height: 50vw
+				.slider
+					width: 100%
+					height: 47vw
+					.slides
+				.controls
+					left: 50%
+					margin-left: -35px
+			p
+				margin: 30px 0 0 0
+				width: 100%
+		.secondBlock__third
+			margin-bottom: 50px
+	.thirdBlock
+		padding: 50px 7%
+		form 
+			#input-email, #input-name
+				width: 97.7%
+			#input-name
+				margin-bottom: 18px
+			#input-message
+				margin-top: 18px
+
+@media screen and (max-width: 321px) 
+	.secondBlock 
+		.secondBlock__first, .secondBlock__second, .secondBlock__third
+			p
+				margin: 40px 0 0
+
+@font-face
+	font-family: Montserrat-Regular
+	src: url('../fonts/Montserrat-Regular.ttf')
+	font-style: normal
+	font-weight: normal
+@font-face
+	font-family: Montserrat-ExtraBold
+	src: url('../fonts/Montserrat-ExtraBold.ttf')
+	font-style: normal
+	font-weight: normal
+@font-face
+	font-family: PTMono-Regular
+	src: url('../fonts/PTMono-Regular.ttf')
+	font-style: normal
+	font-weight: normal
+@font-face
+	font-family: PTSans-Regular
+	src: url('../fonts/PTSans-Regular.ttf')
+	font-style: normal
+	font-weight: normal

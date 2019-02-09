@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.min.css">
+</head>
+<body>
+	<div class="firstBlock">
+		<div class="firstBlock__grey">
+			<img src="img/main.jpg">
+			<h1>Егор Довыденко</h1>
+			<p>1+ год самообразования, места работы нет</p>
+			<a href="tel:+375259690382">Связаться</a>
+		</div>
+		<div class="firstBlock__white">
+			<h2>Ожидания от ШРИ</h2>
+
+			<!-- Без JS (как по правилу задания) не могу сделать закрытие открытой вкладки после выбора другой. Поэтому контент уходит за пределы блока при открытии всех вкладок одновременно. Мог бы сделать плавающую высоту, но тогда будет отхождение от размеров макета -->
+
+			<div class="firstBlock__white--tabs">
+				<input type="checkbox" id="hd-1" class="hide"/>
+			    <label for="hd-1">Получение новых знаний</label>
+			    <div>
+			        Крайне редко удается послушать настоящих специалистов одной из ведущих IT компаний страны
+			    </div>
+			    <br/>
+			    <input type="checkbox" id="hd-2" class="hide"/>
+			    <label for="hd-2">Усвоение "правильных" навыков</label>
+			    <div>
+			        В настоящее время существует океан обучающей информации. Вся ли она необходима в полевых условиях? 
+			    </div>
+			    <br/>
+			    <input type="checkbox" id="hd-3" class="hide"/>
+			    <label for="hd-3" >Престижный сертификат</label>
+			    <div>
+			        - Вы проходили какие-нибудь обучающие курсы?<br>
+			        - Да. Курсы "Разработки интерфейсов" от Яндекс.<br>
+			        - Вы приняты!
+			    </div>
+			    <br/>
+			    <input type="checkbox" id="hd-4" class="hide"/>
+			    <label for="hd-4" >Стажировка в Яндекс</label>
+			    <div>
+			        Наверное каждый уважающий себя начинающий вэб-программист хотел бы работать в Яндекс.
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="secondBlock">
+		<h2>Мои работы</h2>
+		<p>Собраны избранные реально работающие проекты</p>
+
+		<!-- Первый пункт портфолио: слайдер + описание -->
+		<div class="secondBlock__first">
+			<h3>Интернет-магазин мебели</h3>
+			<a href="http://pozitiv-mebel.by" target="_blank">pozitiv-mebel.by</a>
+			<!-- Слайдер -->
+			<div class="wrapper">
+				<input type="radio" name="point" id="slide1" checked>
+				<input type="radio" name="point" id="slide2">
+				<input type="radio" name="point" id="slide3">
+				<input type="radio" name="point" id="slide4">
+				<div class="slider">
+					<div class="slides slide1" checked></div>
+					<div class="slides slide2"></div>
+					<div class="slides slide3"></div>
+					<div class="slides slide4"></div>
+				</div>	
+				<div class="controls">
+					<label for="slide1"></label>
+					<label for="slide2"></label>
+					<label for="slide3"></label>
+					<label for="slide4"></label>
+				</div>
+			</div>
+			<!-- Конец слайдера -->
+			<p>CMS Wordpress. Разрабатывался с нуля.<br>Имеются формы обратной связи на звонок и оформление заказа.<br>Плагин для товаров - Woocommerce. </p>
+		</div>
+
+		<!-- Конец первого пункта портфолио -->
+
+		<!-- Второй пунк портфолио: слайдер + описание -->
+		<div class="secondBlock__second">
+			<h3>Дом вверх дном</h3>
+			<a href="https://domvverhdnom.by/" target="_blank">domvverhdnom.by</a>
+			<!-- Слайдер -->
+			<div class="wrapper">
+				<input type="radio" name="point2" id="slide5" checked>
+				<input type="radio" name="point2" id="slide6">
+				<input type="radio" name="point2" id="slide7">
+				<input type="radio" name="point2" id="slide8">
+				<div class="slider">
+					<div class="slides slide5"></div>
+					<div class="slides slide6"></div>
+					<div class="slides slide7"></div>
+					<div class="slides slide8"></div>
+				</div>	
+				<div class="controls">
+					<label for="slide5"></label>
+					<label for="slide6"></label>
+					<label for="slide7"></label>
+					<label for="slide8"></label>
+				</div>
+			</div>
+			<!-- Конец слайдера -->
+			<p>CMS Wordpress. Изменение дизайна.<br>Произведено полное внешнее переоформление сайта.<br>Тема WordPress выбрана заказчиком.</p>
+		</div>
+		<!-- Конец второго пункта портфолио -->
+
+		<!-- Третий пунк портфолио: слайдер + описание -->
+		<div class="secondBlock__third">
+			<h3>Центр печати</h3>
+			<a href="https://mprint.by/" target="_blank">mprint.by</a>
+			<!-- Слайдер -->
+			<div class="wrapper">
+				<input type="radio" name="point3" id="slide9" checked>
+				<input type="radio" name="point3" id="slide10">
+				<input type="radio" name="point3" id="slide11">
+				<input type="radio" name="point3" id="slide12">
+				<div class="slider">
+					<div class="slides slide9"></div>
+					<div class="slides slide10"></div>
+					<div class="slides slide11"></div>
+					<div class="slides slide12"></div>
+				</div>	
+				<div class="controls">
+					<label for="slide9"></label>
+					<label for="slide10"></label>
+					<label for="slide11"></label>
+					<label for="slide12"></label>
+				</div>
+			</div>
+			<!-- Конец слайдера -->
+			<p>CMS Wordpress. Разрабатывался с нуля.<br>Не доделана мобильная версия сайта и часть дэсктопной.<br>Причина недоработок - отказ заказчика в оплате.</p>
+		</div>
+		<!-- Конец третьего пункта портфолио -->
+	</div>
+	<div class="thirdBlock">
+		<h2>Контактная информация</h2>
+		<div class="thirdBlock__social">
+			<a href="#"><img src="img/social/telegram.png"></a>
+			<a href="#"><img src="img/social/viber.png"></a>
+			<a href="#"><img src="img/social/vkontakte.png"></a>
+		</div>
+		<p>Я открыт для новых проектов. Вы можете прислать мне для оценки примерное техническое задание или просто описание проекта своими словами.</p>
+		<form action="#" class="form">
+			<input type="text" name="name" placeholder="Как вас зовут?" required pattern="[A-Za-zА-Яа-яЁё\s]{2,}" id="input-name" />
+			<input type="text" name="email" placeholder="Почтовый ящик" required pattern="\S+@[a-z]+.[a-z]+"/ id="input-email">
+			<input type="textarea" name="phone" placeholder="Сообщение" required/ id="input-message">
+			<div class="file-download">
+				<input type="file"/>
+				<h4>Припрепить ТЗ</h4>
+			</div>
+			<button type="submit">Отправить</button>
+		</form>
+	</div>
+</body>
+</html>
